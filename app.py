@@ -1,10 +1,25 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[11]:
+
+
 from flask import Flask, request, render_template
+
+
+# In[12]:
 
 
 import joblib
 
 
+# In[13]:
+
+
 app = Flask(__name__)
+
+
+# In[14]:
 
 
 @app.route("/", methods = ["GET", "POST"])
@@ -21,7 +36,20 @@ def index():
         return(render_template("index.html", result1="Waiting", result2="Waiting"))
 
 
+# In[ ]:
+
+
 if __name__ == "__main__":
     app.run()
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
 
 
